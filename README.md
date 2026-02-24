@@ -77,11 +77,11 @@ woordle/
 3. Use the feedback to guess the word in **6 tries or fewer**
 4. You can also click the on-screen keyboard
 
-## 📝 License
-
-MIT
+u can see demo :
+woordlee-eve7hzkzi-liimboooos-projects.vercel.app
 
 ---
 
 Built by **Mohammed Limami** for the Frontend Intern Technical Challenge.
+
 
