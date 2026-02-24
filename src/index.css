@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-correct: #6aaa64;
+  --color-present: #c9b458;
+  --color-absent: #787c7e;
+  --color-tile-border: #d3d6da;
+  --color-tile-border-active: #878a8c;
+  --color-tile-bg: #ffffff;
+  --color-key-bg: #d3d6da;
+  --color-bg: #ffffff;
+  --color-header-border: #d3d6da;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-gray-900 font-sans m-0 p-0;
+  }
+}
+
+/* Tile flip animation */
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Tile pop animation on letter entry */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Shake animation for invalid word */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+/* Bounce animation for win */
+@keyframes bounce-tile {
+  0%, 20% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  50% { transform: translateY(5px); }
+  60% { transform: translateY(-15px); }
+  80% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-flip {
+  animation: flip 0.5s ease-in-out;
+}
+
+.animate-pop {
+  animation: pop 0.1s ease-in-out;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-bounce-tile {
+  animation: bounce-tile 1s ease;
+}
+
+/* Modal scale-in animation */
+@keyframes scale-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in for toast */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
