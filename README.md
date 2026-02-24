@@ -2,24 +2,6 @@
 
 A fully functional Wordle clone built with **React** and **Tailwind CSS**.
 
-![Woordle Screenshot](https://img.shields.io/badge/Game-Woordle-6aaa64?style=for-the-badge&logo=react)
-
-## ✨ Features
-
-### Core
-- **5×6 Game Grid** — 6 attempts to guess a 5-letter word
-- **Color-coded feedback** — Green (correct position), Yellow (wrong position), Gray (not in word)
-- **Duplicate letter handling** — Correct evaluation logic for words with repeated letters
-- **Physical keyboard support** — Type your guesses with your keyboard
-- **Win / Game Over modal** — Clear game status with statistics
-- **Responsive design** — Works on Desktop and Mobile
-
-### Bonus
-- **On-screen keyboard** — Clickable keys with color feedback based on guesses
-- **Animations** — Tile flip reveals, pop on letter entry, shake on invalid word, bounce on win
-- **localStorage persistence** — Game state saved across page refreshes
-- **Daily word** — A new word every day, just like the original Wordle
-
 ## 🛠️ Tech Stack
 
 - **React 19** — Functional components with Hooks
@@ -102,3 +84,4 @@ MIT
 ---
 
 Built by **Mohammed Limami** for the Frontend Intern Technical Challenge.
+
