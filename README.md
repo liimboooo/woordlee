@@ -82,7 +82,8 @@ https://woordlee-k1o623fmu-liimboooos-projects.vercel.app/
 
 ---
 
-Built by **Mohammed Limami** for the Frontend Intern Technical Challenge.
+
+
 
 
 
