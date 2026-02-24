@@ -1,48 +1,55 @@
-# 🟩 Woordle — A Wordle Clone
+# 🟩 Woordle — Wordle Clone
 
-A fully functional Wordle clone built with **React** and **Tailwind CSS**.
+A fully functional Wordle clone built with **React** and **Tailwind CSS** as part of the Frontend Intern Technical Challenge.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **React 19** — Functional components with Hooks
-- **Vite** — Fast development and build tooling
-- **Tailwind CSS v4** — Utility-first styling
+- **React** (Functional Components + Hooks)
+- **Vite** (Development & Build Tool)
+- **Tailwind CSS** (Utility-first styling)
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
-- **Node.js** ≥ 18
-- **npm** ≥ 9
+## ✅ Core Features
 
-### Installation
+- 5×6 game grid (maximum of 6 attempts)
+- Accurate color evaluation logic:
+  - 🟩 Green — Correct letter, correct position
+  - 🟨 Yellow — Correct letter, wrong position
+  - ⬜ Gray — Letter not in the word
+- Correct handling of **duplicate letters**
+- Physical keyboard input support
+- Win / Game Over modal
+- Fully responsive design (Desktop & Mobile)
 
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/woordle.git
-cd woordle
+---
 
-# Install dependencies
-npm install
+## ⭐ Bonus Features
 
-# Start the development server
-npm run dev
-```
+- Interactive on-screen keyboard with dynamic key color updates
+- Smooth tile flip animations
+- Game state persistence using `localStorage`
 
-The app will be available at `http://localhost:5173`.
+---
 
-### Build for Production
+## 🧠 State Management
 
-```bash
-npm run build
-```
+Game logic is managed using a custom React hook (`useGame.js`) which handles:
 
-The production build will be output to the `dist/` directory.
+- Current guess state
+- Guess history tracking
+- Turn management (max 6 attempts)
+- Game over detection
+- Keyboard letter color states
 
-### Preview Production Build
+The evaluation logic is implemented in a separate module to ensure clean separation of concerns and maintainable code structure.
 
-```bash
-npm run preview
-```
+---
+
+## 📁 Project Structure
+
 
 ## 📁 Project Structure
 
@@ -81,6 +88,7 @@ u can see demo :
 https://woordlee-k1o623fmu-liimboooos-projects.vercel.app/
 
 ---
+
 
 
 
